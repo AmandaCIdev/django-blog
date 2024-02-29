@@ -31,7 +31,8 @@ class PostList(generic.ListView):
     return render(
         request,
         "blog/post_detail.html",
-        {"post": post},
+        {"post": post,
+        "coder": "Amanda Mascurine"},
     )
 
 
